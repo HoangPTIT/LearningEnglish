@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageBack"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textTitle" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@id/imageBack"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLearning"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="@string/learning"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonTraining"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+    <Button
+        android:id="@+id/buttonTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="@string/training"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonTesting"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonLearning"
+        app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+    <Button
+        android:id="@+id/buttonTesting"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="@string/test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonTraining"
+        app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+</android.support.constraint.ConstraintLayout>

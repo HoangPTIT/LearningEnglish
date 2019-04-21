@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">LearnEnglish</string>
+    <string name="title_2_voca">Cột mốc</string>
+    <string name="menu">Menu</string>
+    <string name="title_main">Back</string>
+    <string name="title_voca">Góc học tập</string>
+    <string name="show_grid">Hiển thị dạng lưới</string>
+    <string name="show_list">Hiển thị dạng danh sách</string>
+    <string name="learning">Học thuộc</string>
+    <string name="training">Tập luyện</string>
+    <string name="test">Kiểm tra</string>
+    <string name="continue_train">Tiếp tục</string>
+    <string name="title_question">Chọn từ có nghĩa</string>
+    <string name="title_topic_adv">chủ yếu (adv)</string>
+    <string name="topic_1">Chủ đề 1</string>
+    <string name="topic_2">Chủ đề 2</string>
+    <string name="topic_3">Chủ đề 3</string>
+    <string name="topic_4">Chủ đề 4</string>
+    <string name="topic_5">Chủ đề 5</string>
+    <string name="topic_6">Chủ đề 6</string>
+    <string name="topic_7">Chủ đề 7</string>
+    <string name="topic_8">Chủ đề 8</string>
+    <string name="topic_9">Chủ đề 9</string>
+    <string name="ic_topic_1">ic_topic_1</string>
+    <string name="ic_topic_2">ic_topic_2</string>
+    <string name="ic_topic_3">ic_topic_3</string>
+    <string name="ic_topic_4">ic_topic_4</string>
+    <string name="ic_topic_5">ic_topic_5</string>
+    <string name="ic_topic_6">ic_topic_6</string>
+    <string name="ic_topic_7">ic_topic_7</string>
+    <string name="ic_topic_8">ic_topic_8</string>
+    <string name="ic_topic_9">ic_topic_9</string>
+</resources>

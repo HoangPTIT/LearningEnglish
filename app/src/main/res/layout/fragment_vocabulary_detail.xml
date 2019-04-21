@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/imageBackDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTitleDetaill"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_constraintLeft_toRightOf="@+id/imageBackDetail"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/consTopicDedtail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@color/color_grey"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBackDetail">
+
+        <TextView
+            android:id="@+id/textQuestion1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/title_question"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintBottom_toTopOf="@+id/textQuestion2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textQuestion2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/title_topic_adv"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textQuestion1" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textAnswe1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_48"
+        android:background="@color/colorPrimaryDark"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintEnd_toStartOf="@+id/textAnswe2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/consTopicDedtail" />
+
+    <TextView
+        android:id="@+id/textAnswe2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_48"
+        android:background="@color/colorPrimaryDark"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textAnswe1"
+        app:layout_constraintTop_toBottomOf="@id/consTopicDedtail" />
+
+    <TextView
+        android:id="@+id/textAnswe3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_24"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textAnswe2" />
+
+    <TextView
+        android:id="@+id/textAnswe4"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_24"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textAnswe3" />
+
+    <TextView
+        android:id="@+id/textAnswe5"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_24"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintEnd_toStartOf="@+id/textAnswe6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textAnswe4" />
+
+    <TextView
+        android:id="@+id/textAnswe6"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_24"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textAnswe5"
+        app:layout_constraintTop_toBottomOf="@id/textAnswe4" />
+
+    <TextView
+        android:id="@+id/textAnswe7"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_24"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textAnswe6" />
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_80"
+        android:layout_marginRight="@dimen/dp_80"
+        android:background="@color/colorPrimary"
+        android:text="@string/continue_train"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
